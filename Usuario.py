@@ -1,27 +1,20 @@
 class usuario:
-    def __init__(self,nombre,cedula,tipo_usuario):
-        self.nombre_usuario = nombre
-        self.cedula_usuario = cedula
-        self.tipo_usuario = tipo_usuario
+    def __init__(self,nombre,cedula):
+        self.nombre = nombre
+        self.cedula = cedula
+        
+    def get_cedula(self):
+        return self.cedula
     
-    def get_nombre_usuario(self):
-        return self.nombre_usuario
+    def set_cedula(self,nueva_cedula):
+        self.cedula = nueva_cedula  
+        
+    def get_nombre(self):
+        return self.nombre
     
-    def set_nombre_usuario(self,nuevo_usuario):
-        self.nombre_usuario = nuevo_usuario            
-
-    def get_cedula_usuario(self):
-        return self.cedula_usuario
-
-    def set_cedula_usuario(self,nueva_cedula):
-        self.cedula_usuario = nueva_cedula
-
-    def get_tipo_usuario(self):
-        return self.tipo_usuario
-
-    def set_tipo_usuario(self,nuevo_usuario):
-        self.tipo_usuario = nuevo_usuario     
-
+    def set_nombre(self,nuevo_nombre):
+        self.nombre = nuevo_nombre
+        
     def imprimir_datos(self):
-        print(f"nombre del usuario : {self.nombre_usuario}")     
-        print(f"cedula del usuario : {self.cedula_usuario}")
+        print(f"nombre de cliente es : {self.nombre}")
+        print(f"cedula de cliente es : {self.cedula}")          
